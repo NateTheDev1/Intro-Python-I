@@ -35,13 +35,37 @@ waypoints = [
 
 # Add a new waypoint to the list
 # YOUR CODE HERE
+waypoints.append({"lat": 100, "lon": -10, "name": "Nate's house"})
+print(waypoints)
 
 # Modify the dictionary with name "a place" such that its longitude
 # value is -130 and change its name to "not a real place"
 # Note: It's okay to access the dictionary using bracket notation on the
 # waypoints list.
+waypoints[0]['name'] = 'not a real place'
+waypoints[0]['lon'] = -130
+print(waypoints)
 
 # YOUR CODE HERE
 
 # Write a loop that prints out all the field values for all the waypoints
 # YOUR CODE HERE
+
+for num in range(len(waypoints)) :
+    print(waypoints[num])
+
+
+# One primary use-case is to associate keys with values
+# Dicts provide efficient fetching of keys
+# e = {"foo": 11, 10: "bar"}
+# print(e)
+# iterate through dict key-value pairs
+
+# for key in e:
+#     print(e[key])
+
+
+# for key, val in e.items():
+#     print(key, val)
+
+# the `items` method on dicts is similar to the enumerate function
